@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="libs/gsap.min.js" defer></script>
+    <script src="libs/Draggable.min.js" defer></script>
+    <script src="libs/InertiaPlugin.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <style>
+        .gallery {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 class="header">Top 100 Anine<span>Loading...</span></h1>
+
+    <div class="gallery">
+        <div class="gallery__item"><img src="img/100.webp" alt="Alt"><p>100. Free!</p></div>
+        <div class="gallery__item"><img src="img/99.gif" alt="Alt"><p>99. Lucky Star</p></div>
+        <div class="gallery__item"><img src="img/98.gif" alt="Alt"><p>98. Elfen Lied</p></div>
+        <div class="gallery__item"><img src="img/97.gif" alt="Alt"><p>97. Log Horizon</p></div>
+        <div class="gallery__item"><img src="img/96.gif" alt="Alt"><p>96. Cardcaptor Sakura</p></div>
+        <div class="gallery__item"><img src="img/95.gif" alt="Alt"><p>95. Berserk (1997)</p></div>
+        <div class="gallery__item"><img src="img/94.webp" alt="Alt"><p>94. Magi: The Labyrinth of Magic</p></div>
+        <div class="gallery__item"><img src="img/93.gif" alt="Alt"><p>93. Hellsing: Ultimate</p></div>
+        <div class="gallery__item"><img src="img/92.webp" alt="Alt"><p>92. The Pet Girl of Sakurasou</p></div>
+        <div class="gallery__item"><img src="img/91.webp" alt="Alt"><p>91. Katekyō Hitman Reborn!</p></div>
+        <div class="gallery__item"><img src="img/90.webp" alt="Alt"><p>90. Yu Yu Hakusho</p></div>
+        <div class="gallery__item"><img src="img/89.gif" alt="Alt"><p>89. Yona of the Dawn</p></div>
+        <div class="gallery__item"><img src="img/88.webp" alt="Alt"><p>88. Charlotte</p></div>
+        <div class="gallery__item"><img src="img/87.gif" alt="Alt"><p>87. Seraph of the End</p></div>
+        <div class="gallery__item"><img src="img/86.gif" alt="Alt"><p>86. Akame ga Kill!</p></div>
+        <div class="gallery__item"><img src="img/85.gif" alt="Alt"><p>85. When They Cry </p></div>
+        <div class="gallery__item"><img src="img/84.webp" alt="Alt"><p>84. Hyouka</p></div>
+        <div class="gallery__item"><img src="img/83.gif" alt="Alt"><p>83. Ghost In The Shell (1995)</p></div>
+        <div class="gallery__item"><img src="img/82.gif" alt="Alt"><p>82. Kuroko no Basket</p></div>
+        <div class="gallery__item"><img src="img/81.gif" alt="Alt"><p>81. Terror In Resonance </p></div>
+        <div class="gallery__item"><img src="img/80.gif" alt="Alt"><p>80. Natsume Yuujinchou</p></div>
+        <div class="gallery__item"><img src="img/79.webp" alt="Alt"><p>79. Pokemon</p></div>
+        <div class="gallery__item"><img src="img/78.jpg" alt="Alt"><p>78. Akira (1988)</p></div>
+        <div class="gallery__item"><img src="img/77.gif" alt="Alt"><p>77. Mushishi</p></div>
+        <div class="gallery__item"><img src="img/76.gif" alt="Alt"><p>76. Dragon Ball</p></div>
+        <div class="gallery__item"><img src="img/75.webp" alt="Alt"><p>75. Another</p></div>
+        <div class="gallery__item"><img src="img/73.webp" alt="Alt"><p>73. FLCL (Fooly Cooly)</p></div>
+        <div class="gallery__item"><img src="img/72c.webp" alt="Alt"><p>72. Samurai Champloo</p></div>
+        <div class="gallery__item"><img src="img/71.gif" alt="Alt"><p>71. Monster</p></div>
+        <div class="gallery__item"><img src="img/70.gif" alt="Alt"><p>70. Shinsekai Yori</p></div>
+        <div class="gallery__item"><img src="img/69.webp" alt="Alt"><p>69. The Seven Deadly Sins</p></div>
+        <div class="gallery__item"><img src="img/66.gif" alt="Alt"><p>66. Miss Kobayashi's Dragon Maid</p></div>
+        <div class="gallery__item"><img src="img/64.webp" alt="Alt"><p>64. Sailor Moon</p></div>
+        <div class="gallery__item"><img src="img/63.gif" alt="Alt"><p>63. K-On!</p></div>
+        <div class="gallery__item"><img src="img/62.webp" alt="Alt"><p>62. Nichijou (My Ordinary Life)</p></div>
+        <div class="gallery__item"><img src="img/61.webp" alt="Alt"><p>61. Blue Exorcist</p></div>
+        <div class="gallery__item"><img src="img/59.webp" alt="Alt"><p>59. Anohana</p></div>
+        <div class="gallery__item"><img src="img/58.gif" alt="Alt"><p>58. Inuyasha</p></div>
+        <div class="gallery__item"><img src="img/56.webp" alt="Alt"><p>56. Howl's Moving Castle</p></div>
+        <div class="gallery__item"><img src="img/54.webp" alt="Alt"><p>54. Shokugeki No Soma (Food Wars)</p></div>
+        <div class="gallery__item"><img src="img/53.webp" alt="Alt"><p>53. Princess Mononoke </p></div>
+        <div class="gallery__item"><img src="img/49.webp" alt="Alt"><p>49. Psycho-Pass</p></div>
+        <div class="gallery__item"><img src="img/48.webp" alt="Alt"><p>48. Naruto Shippuden</p></div>
+        <div class="gallery__item"><img src="img/46.webp" alt="Alt"><p>46. Durarara!!</p></div>
+        <div class="gallery__item"><img src="img/43.webp" alt="Alt"><p>43. Kill La Kill </p></div>
+        <div class="gallery__item"><img src="img/42.webp" alt="Alt"><p>42. Bleach</p></div>
+        <div class="gallery__item"><img src="img/39.webp" alt="Alt"><p>39. Fate/Zero</p></div>
+        <div class="gallery__item"><img src="img/37.webp" alt="Alt"><p>37. Toradora</p></div>
+        <div class="gallery__item"><img src="img/31.webp" alt="Alt"><p>31. Black Butler</p></div>
+        <div class="gallery__item"><img src="img/30.webp" alt="Alt"><p>30. Angel Beats</p></div>
+        <div class="gallery__item"><img src="img/29.webp" alt="Alt"><p>29. Sword Art Online</p></div>
+        <div class="gallery__item"><img src="img/26.webp" alt="Alt"><p>26. Neon Genesis Evangelion</p></div>
+        <div class="gallery__item"><img src="img/24.webp" alt="Alt"><p>24. Re: Zero</p></div>
+        <div class="gallery__item"><img src="img/23.webp" alt="Alt"><p>23. Spirited Away</p></div>
+        <div class="gallery__item"><img src="img/22.webp" alt="Alt"><p>22. JoJo's Bizarre Adventure</p></div>
+        <div class="gallery__item"><img src="img/19.webp" alt="Alt"><p>19. Gintama</p></div>
+        <div class="gallery__item"><img src="img/18.gif" alt="Alt"><p>18. Assassination Classroom</p></div>
+        <div class="gallery__item"><img src="img/16.webp" alt="Alt"><p>16. Cowboy Bebop</p></div>
+        <div class="gallery__item"><img src="img/15.webp" alt="Alt"><p>15. Tokyo Ghoul</p></div>
+        <div class="gallery__item"><img src="img/14.webp" alt="Alt"><p>14. Naruto</p></div>
+        <div class="gallery__item"><img src="img/13.webp" alt="Alt"><p>13. Fairy Tail</p></div>
+        <div class="gallery__item"><img src="img/12.gif" alt="Alt"><p>12. No Game No Life</p></div>
+        <div class="gallery__item"><img src="img/11.gif" alt="Alt"><p>11. Koe No Katachi (A Silent Voice)</p></div>
+        <div class="gallery__item"><img src="img/10.webp" alt="Alt"><p>10. One Punch Man</p></div>
+        <div class="gallery__item"><img src="img/9.webp" alt="Alt"><p>9. Code Geass</p></div>
+        <div class="gallery__item"><img src="img/8.gif" alt="Alt"><p>8. Your Lie in April</p></div>
+        <div class="gallery__item"><img src="img/7.webp" alt="Alt"><p>7. One Piece</p></div>
+        <div class="gallery__item"><img src="img/6.webp" alt="Alt"><p>6. Steins:Gate</p></div>
+        <div class="gallery__item"><img src="img/5.webp" alt="Alt"><p>5. Attack On Titan</p></div>
+        <div class="gallery__item"><img src="img/4.webp" alt="Alt"><p>4. Death Note</p></div>
+        <div class="gallery__item"><img src="img/3.gif" alt="Alt"><p>3. Your Name</p></div>
+        <div class="gallery__item"><img src="img/2.webp" alt="Alt"><p>2. Boku No Hero Academia</p></div>
+        <div class="gallery__item"><img src="img/1.webp" alt="Alt"><p>1. Full Metal Alchemist: Brotherhood</p></div>
+
+
+
+        <div class="gallery__item"><img src="img/100.webp" alt="Alt"><p>100. Free!</p></div>
+        <div class="gallery__item"><img src="img/99.gif" alt="Alt"><p>99. Lucky Star</p></div>
+        <div class="gallery__item"><img src="img/98.gif" alt="Alt"><p>98. Elfen Lied</p></div>
+        <div class="gallery__item"><img src="img/97.gif" alt="Alt"><p>97. Log Horizon</p></div>
+        <div class="gallery__item"><img src="img/96.gif" alt="Alt"><p>96. Cardcaptor Sakura</p></div>
+        <div class="gallery__item"><img src="img/95.gif" alt="Alt"><p>95. Berserk (1997)</p></div>
+        <div class="gallery__item"><img src="img/94.webp" alt="Alt"><p>94. Magi: The Labyrinth of Magic</p></div>
+        <div class="gallery__item"><img src="img/93.gif" alt="Alt"><p>93. Hellsing: Ultimate</p></div>
+        <div class="gallery__item"><img src="img/92.webp" alt="Alt"><p>92. The Pet Girl of Sakurasou</p></div>
+        <div class="gallery__item"><img src="img/91.webp" alt="Alt"><p>91. Katekyō Hitman Reborn!</p></div>
+        <div class="gallery__item"><img src="img/90.webp" alt="Alt"><p>90. Yu Yu Hakusho</p></div>
+        <div class="gallery__item"><img src="img/89.gif" alt="Alt"><p>89. Yona of the Dawn</p></div>
+        <div class="gallery__item"><img src="img/88.webp" alt="Alt"><p>88. Charlotte</p></div>
+        <div class="gallery__item"><img src="img/87.gif" alt="Alt"><p>87. Seraph of the End</p></div>
+        <div class="gallery__item"><img src="img/86.gif" alt="Alt"><p>86. Akame ga Kill!</p></div>
+        <div class="gallery__item"><img src="img/85.gif" alt="Alt"><p>85. When They Cry </p></div>
+        <div class="gallery__item"><img src="img/84.webp" alt="Alt"><p>84. Hyouka</p></div>
+        <div class="gallery__item"><img src="img/83.gif" alt="Alt"><p>83. Ghost In The Shell (1995)</p></div>
+        <div class="gallery__item"><img src="img/82.gif" alt="Alt"><p>82. Kuroko no Basket</p></div>
+        <div class="gallery__item"><img src="img/81.gif" alt="Alt"><p>81. Terror In Resonance </p></div>
+        <div class="gallery__item"><img src="img/80.gif" alt="Alt"><p>80. Natsume Yuujinchou</p></div>
+        <div class="gallery__item"><img src="img/79.webp" alt="Alt"><p>79. Pokemon</p></div>
+        <div class="gallery__item"><img src="img/78.jpg" alt="Alt"><p>78. Akira (1988)</p></div>
+        <div class="gallery__item"><img src="img/77.gif" alt="Alt"><p>77. Mushishi</p></div>
+        <div class="gallery__item"><img src="img/76.gif" alt="Alt"><p>76. Dragon Ball</p></div>
+        <div class="gallery__item"><img src="img/75.webp" alt="Alt"><p>75. Another</p></div>
+        <div class="gallery__item"><img src="img/73.webp" alt="Alt"><p>73. FLCL (Fooly Cooly)</p></div>
+        <div class="gallery__item"><img src="img/72c.webp" alt="Alt"><p>72. Samurai Champloo</p></div>
+        <div class="gallery__item"><img src="img/71.gif" alt="Alt"><p>71. Monster</p></div>
+        <div class="gallery__item"><img src="img/70.gif" alt="Alt"><p>70. Shinsekai Yori</p></div>
+        <div class="gallery__item"><img src="img/69.webp" alt="Alt"><p>69. The Seven Deadly Sins</p></div>
+        <div class="gallery__item"><img src="img/66.gif" alt="Alt"><p>66. Miss Kobayashi's Dragon Maid</p></div>
+        <div class="gallery__item"><img src="img/64.webp" alt="Alt"><p>64. Sailor Moon</p></div>
+        <div class="gallery__item"><img src="img/63.gif" alt="Alt"><p>63. K-On!</p></div>
+        <div class="gallery__item"><img src="img/62.webp" alt="Alt"><p>62. Nichijou (My Ordinary Life)</p></div>
+        <div class="gallery__item"><img src="img/61.webp" alt="Alt"><p>61. Blue Exorcist</p></div>
+        <div class="gallery__item"><img src="img/59.webp" alt="Alt"><p>59. Anohana</p></div>
+        <div class="gallery__item"><img src="img/58.gif" alt="Alt"><p>58. Inuyasha</p></div>
+        <div class="gallery__item"><img src="img/56.webp" alt="Alt"><p>56. Howl's Moving Castle</p></div>
+        <div class="gallery__item"><img src="img/54.webp" alt="Alt"><p>54. Shokugeki No Soma (Food Wars)</p></div>
+        <div class="gallery__item"><img src="img/53.webp" alt="Alt"><p>53. Princess Mononoke </p></div>
+        <div class="gallery__item"><img src="img/49.webp" alt="Alt"><p>49. Psycho-Pass</p></div>
+        <div class="gallery__item"><img src="img/48.webp" alt="Alt"><p>48. Naruto Shippuden</p></div>
+        <div class="gallery__item"><img src="img/46.webp" alt="Alt"><p>46. Durarara!!</p></div>
+        <div class="gallery__item"><img src="img/43.webp" alt="Alt"><p>43. Kill La Kill </p></div>
+        <div class="gallery__item"><img src="img/42.webp" alt="Alt"><p>42. Bleach</p></div>
+        <div class="gallery__item"><img src="img/39.webp" alt="Alt"><p>39. Fate/Zero</p></div>
+        <div class="gallery__item"><img src="img/37.webp" alt="Alt"><p>37. Toradora</p></div>
+        <div class="gallery__item"><img src="img/31.webp" alt="Alt"><p>31. Black Butler</p></div>
+        <div class="gallery__item"><img src="img/30.webp" alt="Alt"><p>30. Angel Beats</p></div>
+        <div class="gallery__item"><img src="img/29.webp" alt="Alt"><p>29. Sword Art Online</p></div>
+        <div class="gallery__item"><img src="img/26.webp" alt="Alt"><p>26. Neon Genesis Evangelion</p></div>
+        <div class="gallery__item"><img src="img/24.webp" alt="Alt"><p>24. Re: Zero</p></div>
+        <div class="gallery__item"><img src="img/23.webp" alt="Alt"><p>23. Spirited Away</p></div>
+        <div class="gallery__item"><img src="img/22.webp" alt="Alt"><p>22. JoJo's Bizarre Adventure</p></div>
+        <div class="gallery__item"><img src="img/19.webp" alt="Alt"><p>19. Gintama</p></div>
+        <div class="gallery__item"><img src="img/18.gif" alt="Alt"><p>18. Assassination Classroom</p></div>
+        <div class="gallery__item"><img src="img/16.webp" alt="Alt"><p>16. Cowboy Bebop</p></div>
+        <div class="gallery__item"><img src="img/15.webp" alt="Alt"><p>15. Tokyo Ghoul</p></div>
+        <div class="gallery__item"><img src="img/14.webp" alt="Alt"><p>14. Naruto</p></div>
+        <div class="gallery__item"><img src="img/13.webp" alt="Alt"><p>13. Fairy Tail</p></div>
+        <div class="gallery__item"><img src="img/12.gif" alt="Alt"><p>12. No Game No Life</p></div>
+        <div class="gallery__item"><img src="img/11.gif" alt="Alt"><p>11. Koe No Katachi (A Silent Voice)</p></div>
+        <div class="gallery__item"><img src="img/10.webp" alt="Alt"><p>10. One Punch Man</p></div>
+        <div class="gallery__item"><img src="img/9.webp" alt="Alt"><p>9. Code Geass</p></div>
+        <div class="gallery__item"><img src="img/8.gif" alt="Alt"><p>8. Your Lie in April</p></div>
+        <div class="gallery__item"><img src="img/7.webp" alt="Alt"><p>7. One Piece</p></div>
+        <div class="gallery__item"><img src="img/6.webp" alt="Alt"><p>6. Steins:Gate</p></div>
+        <div class="gallery__item"><img src="img/5.webp" alt="Alt"><p>5. Attack On Titan</p></div>
+        <div class="gallery__item"><img src="img/4.webp" alt="Alt"><p>4. Death Note</p></div>
+        <div class="gallery__item"><img src="img/3.gif" alt="Alt"><p>3. Your Name</p></div>
+        <div class="gallery__item"><img src="img/2.webp" alt="Alt"><p>2. Boku No Hero Academia</p></div>
+        <div class="gallery__item"><img src="img/1.webp" alt="Alt"><p>1. Full Metal Alchemist: Brotherhood</p></div>
+
+
+
+    </div>
+</body>
+</html>
